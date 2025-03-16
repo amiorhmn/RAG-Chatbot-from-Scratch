@@ -1,16 +1,23 @@
 # RAG-Chatbot-from-Scratch
 A simple command-line RAG (Retieval Augmented Generation) chatbot application built from scratch. No external framework or library has been used except *requests* and *scikit-learn* modules. It uses a locally hosted LLM via *Ollama* to generate embedding and response to user's query based on relevant information from a text file.
 
+## Features
+- No external RAG framework or agent library
+- Uses locally hosted open-source models
+- Command-line interface
+- Handling of error during document loading
+- Exit program via `KeyboardInterrupt` or `exit` and `quit` keywords
+
 ## Conversation Example
 ```
 (.venv) PS C:\Users\Amio\Desktop\RAG-Chatbot-from-Scratch> python main.py
 Please enter the path of your document: cat-facts.txt
 Document loaded with 150 entries.
-Ask me a question: What do cats eat?
+Ask a question: What do cats eat?
 Chatbot: According to the context, cats eat about five mice per meal.
-Ask me a question: How long does a cat live? 
+Ask a question: How long does a cat live? 
 Chatbot: According to the provided context, the average life span of a domestic cat is 14 years.
-Ask me a question: quit                         
+Ask a question: quit                         
 (.venv) PS C:\Users\Amio\Desktop\RAG-Chatbot-from-Scratch>
 ```
 
