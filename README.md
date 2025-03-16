@@ -2,8 +2,9 @@
 A simple command-line RAG (Retieval Augmented Generation) chatbot application built from scratch. No external framework or library has been used except *requests* and *scikit-learn* modules. It uses a locally hosted LLM via *Ollama* to generate embedding and response to user's query based on relevant information from a text file.
 
 ## Features
-- No external RAG framework or agent library
-- Uses locally hosted open-source models
+- Implementation of RAG from scratch without any third party framework
+- Uses locally hosted open-source LLM and embedding model
+- Advanced prompting for LLM input
 - Command-line interface
 - Handling of error during document loading
 - Exit program via `KeyboardInterrupt` or `exit` and `quit` keywords
