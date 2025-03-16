@@ -39,27 +39,27 @@ The application contains two files:
 The `utils.py` contains three functions. Each of them does a specific task in the RAG pipeline. The app is run from the `main.py` file.
 
 ## How to run
--  Install *Ollama* from [ollama.com](https://ollama.com)
--  Download an embedding model and a text model (e.g. *all-minilm* and *Gemma3*)
+1.  Install *Ollama* from [ollama.com](https://ollama.com)
+2.  Download an embedding model and a text model (e.g. *all-minilm* and *Gemma3*)
    ```
    ollama pull all-minilm
    ollama pull gemma3
    ```
--  Clone the repository
+3.  Clone the repository
    ```
    git clone https://github.com/amiorhmn/RAG-Chatbot-from-Scratch.git
    cd RAG-Chatbot-from-Scratch
    ```
--  Create and activate a virtual environment
+4.  Create and activate a virtual environment
    ```
    python -m venv .venv
    source .venv/bin/activate  # On Windows, use `.venv\Scripts\activate`
    ```
--  Install the requirements
+5.  Install the requirements
    ```
    pip install -r requirements.txt
    ```
--  Run the app
+6.  Run the app
    ```
    python main.py
    ```
